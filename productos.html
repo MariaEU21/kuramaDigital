@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - Kurama Digital</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="images/KuramaFoxOrange.png" type="image/png">
+  
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Estilos adicionales para la grid -->
+  <style>
+    /* Grid responsiva para las fotos de cada categoría */
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .photo-item {
+      text-align: center;
+    }
+    .photo-item img {
+      width: 100%;
+      height: 200px;           /* Contenedor fijo para uniformidad */
+      object-fit: cover;       /* Se recorta ligeramente para llenar el contenedor */
+      display: block;
+      border-radius: 4px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .photo-item p {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #020307;
+    }
+    /* Títulos centrados para cada sección */
+    .section-title {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 36px;
+      color: #020307;
+    }
+    /* Descripción de cada categoría */
+    .section-description {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 18px;
+      color: #444;
+    }
+    /* Estilo para los botones de WhatsApp de cada categoría */
+    .category-button {
+      display: inline-block;
+      margin: 20px auto 0;
+      padding: 10px 20px;
+      background-color: #f07c04;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .category-button:hover {
+      background-color: #d26c03;
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER / NAVEGACIÓN -->
+  <header>
+    <div class="container navbar">
+      <!-- LOGO en círculo blanco -->
+      <div class="logo-circle">
+        <img src="images/Logo.png" alt="Kurama Design Logo" class="brand-logo">
+      </div>
+      <!-- Ícono menú hamburguesa -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!-- Menú de navegación -->
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+  
+  <!-- CONTENIDO PRINCIPAL -->
+  <section id="productos" class="container fade-in-section">
+    <!-- Sección: Cuadernos Personalizados -->
+    <h2 class="section-title">Cuadernos Personalizados</h2>
+    <p class="section-description">Descubre nuestra exclusiva colección de cuadernos personalizados, elaborados con materiales de alta calidad y diseños únicos para ti.</p>
+    <div class="photo-grid">
+      <div class="photo-item">
+        <img src="images/c1.jpg" alt="Cuaderno Personalizado 1">
+        <p>Modelo 1</p>
+      </div>
+      <div class="photo-item">
+        <img src="images/c2.jpg" alt="Cuaderno Personalizado 2">
+        <p>Modelo 2</p>
+      </div>
+      <div class="photo-item">
+        <img src="images/c3.jpg" alt="Cuaderno Personalizado 3">
+        <p>Modelo 3</p>
+      </div>
+      <div class="photo-item">
+        <img src="images/c4.jpg" alt="Cuaderno Personalizado 4">
+        <p>Modelo 4</p>
+      </div>
+      <div class="photo-item">
+        <img src="images/c5.jpg" alt="Cuaderno Personalizado 5">
+        <p>Modelo 5</p>
+      </div>
+      <div class="photo-item">
+        <img src="images/c6.jpg" alt="Cuaderno Personalizado 6">
+        <p>Modelo 6</p>
+      </div>
+    </div>
+    <!-- Botón de WhatsApp para cuadernos -->
+    <a href="https://wa.me/5493435023709?text=Hola%2C%20estoy%20interesado%20en%20cuadernos%20personalizados.%20%C2%BFPodr%C3%ADan%20informarme%20sobre%20el%20precio%20y%20las%20opciones%20disponibles%3F" class="category-button" target="_blank" rel="noopener noreferrer">
+      Consultar precio
+    </a>
+    
+    <!-- Sección: Stickers Personalizados -->
+    <h2 class="section-title">Stickers Personalizados</h2>
+    <p class="section-description">Nuestros stickers personalizados son perfectos para darle un toque único y creativo a tus objetos o espacios.</p>
+    <div class="photo-grid">
+      <div class="photo-item">
+        <img src="images/s1.jpg" alt="Sticker Personalizado 1">
+        <p>Modelo 1</p>
+      </div>
+      <div class="photo-item">
+        <img src="images/s2.jpg" alt="Sticker Personalizado 2">
+        <p>Modelo 2</p>
+      </div>
+      <div class="photo-item">
+        <img src="images/s3.jpg" alt="Sticker Personalizado 3">
+        <p>Modelo 3</p>
+      </div>
+    </div>
+    <!-- Botón de WhatsApp para stickers -->
+    <a href="https://wa.me/5493435023709?text=Hola%2C%20estoy%20interesado%20en%20stickers%20personalizados.%20%C2%BFPodr%C3%ADan%20informarme%20sobre%20el%20precio%20y%20las%20opciones%20disponibles%3F" class="category-button" target="_blank" rel="noopener noreferrer">
+      Consultar precio
+    </a>
+    
+    <!-- Sección: Folletos Personalizados -->
+    <h2 class="section-title">Folletos Personalizados</h2>
+    <p class="section-description">Nuestros folletos personalizados te ayudarán a promocionar tu negocio con estilo y profesionalismo.</p>
+    <div class="photo-grid">
+      <div class="photo-item">
+        <img src="images/f1.jpg" alt="Folleto Personalizado 1">
+        <p>Modelo 1</p>
+      </div>
+      <div class="photo-item">
+        <img src="images/f2.jpg" alt="Folleto Personalizado 2">
+        <p>Modelo 2</p>
+      </div>
+      <div class="photo-item">
+        <img src="images/f3.jpg" alt="Folleto Personalizado 3">
+        <p>Modelo 3</p>
+      </div>
+    </div>
+    <!-- Botón de WhatsApp para folletos -->
+    <a href="https://wa.me/5493435023709?text=Hola%2C%20estoy%20interesado%20en%20folletos%20personalizados.%20%C2%BFPodr%C3%ADan%20informarme%20sobre%20el%20precio%20y%20las%20opciones%20disponibles%3F" class="category-button" target="_blank" rel="noopener noreferrer">
+      Consultar precio
+    </a>
+    
+ 
+</section>
+<!-- Botón para volver a Inicio -->
+<a href="index.html" class="whatsapp-button" style="margin-top:20px;">Volver a Inicio</a>
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Kurama Digital. Todos los derechos reservados.</p>
+    <p>Desarrollado por Maria Eugenia Urriste</p>
+  </footer>
+  
+  <!-- BOTÓN FLOTANTE DE WHATSAPP (con mensaje predefinido) -->
+  <a href="https://wa.me/5493435023709?text=Hola%2C%20estoy%20interesado%20en%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20los%20cuadernos%20personalizados." class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <img src="images/whatsapp.png" alt="WhatsApp">
+  </a>
+  
+  <!-- Script Principal -->
+  <script src="js/main.js"></script>
+</body>
+</html>

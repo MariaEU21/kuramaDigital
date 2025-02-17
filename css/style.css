@@ -1,0 +1,317 @@
+/*
+========================================================
+style.css
+--------------------------------------------------------
+Paleta de colores:
+  - Negro principal (#020307)
+  - Naranja (#f07c04)
+  - Blanco (#ffffff)
+  - Crema (#fbddbe)
+========================================================
+*/
+
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  color: #020307;
+  line-height: 1.4;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* HEADER */
+header {
+  background-color: #020307;
+  color: #ffffff;
+  position: relative;
+  z-index: 9999;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  position: relative;
+}
+
+/* LOGO CÍRCULO BLANCO (150px) */
+.logo-circle {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-logo {
+  width: 150px;
+  height: auto;
+}
+
+/* MENÚ DESKTOP */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+/* ÍCONO HAMBURGUESA (oculto en desktop) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* NAV LINKS */
+.nav-menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.nav-menu li a:hover {
+  color: #f07c04;
+}
+
+/* LINKS GENERALES (fuera del nav) */
+a {
+  text-decoration: none;
+  color: #000000;
+}
+a:hover {
+  text-decoration: underline;
+  color: #f07c04;
+}
+
+/* BANNER (slide-in) */
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  animation: slideIn 1.2s ease-out forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* TÍTULOS */
+.main-title {
+  text-align: center;
+  font-size: 42px;
+  margin: 2rem 0 1rem 0;
+}
+.title {
+  font-size: 36px;
+  margin: 2rem 0 1rem 0;
+  color: #020307;
+}
+
+/* CARDS (Productos, Servicios, Cursos) */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.card {
+  background-color: #fbddbe; /* Crema */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.card-content {
+  padding: 1rem;
+}
+.card-content h3 {
+  margin: 0.5rem 0;
+  font-size: 20px;
+}
+
+/* BOTÓN WHATSAPP (en cada card) */
+.whatsapp-button {
+  background-color: #f07c04;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 1rem;
+}
+.whatsapp-button:hover {
+  background-color: #d26c03;
+  color: #000000;
+}
+
+/* PROMOCIONES Y PUBLICIDAD: esta sección ha sido eliminada */
+
+/* CONTACTO */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* MAP CONTAINER */
+.map-container {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* FOOTER */
+footer {
+  background-color: #020307;
+  color: #ffffff;
+  padding: 1rem 0;
+  text-align: center;
+}
+footer p {
+  margin: 0.5rem 0;
+}
+
+/* BOTÓN FLOTANTE DE WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+.whatsapp-float img {
+  width: 55px;
+  height: 55px;
+}
+
+/* FADE-IN SECTION */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* MENÚ HAMBURGUESA EN MOBILE */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    background-color: rgba(2, 3, 7, 0.8);
+    flex-direction: column;
+    gap: 1rem;
+    width: 200px;
+    padding: 1rem;
+    z-index: 9999;
+  }
+  .nav-menu.open {
+    display: flex;
+  }
+  .hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+    width: 25px;
+  }
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+    width: 25px;
+  }
+  /* Logo más pequeño en mobile */
+  .logo-circle {
+    width: 100px;
+    height: 100px;
+  }
+  .brand-logo {
+    width: 80px;
+  }
+  /* Si hubiera carrusel, se ajustaría; aquí no aplica */
+}
+
+/* Clase para ocultar elementos visualmente pero mantenerlos en el DOM */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
